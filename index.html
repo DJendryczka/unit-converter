@@ -17,16 +17,20 @@
     <div class="container">
       <div class="main">
         <h2>Metric/Imperial unit conversion</h2>
-        <h1 id="convert-num">0</h1>
+        <input type="number" placeholder="Type unit to convert here" id="convert-num">
+        <div class="btn">
+            <button onclick="clearMessage()" id="clearBtn">Clear</button>
+            <button onclick="convert()">Convert</button>
+        </div>
       </div>
       <div class="res-section">
         <div class="results">
           <h3>Length (Meter/Feet)</h3>
-          <p id="length">0 meters = 0.000 feet | 0 feet = 0.000</p>
+          <p id="length"></p>
           <h3>Volume (Liters/Gallons)</h3>
-          <p id="volume">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+          <p id="volume"></p>
           <h3>Mass (Kilograms/Pounds)</h3>
-          <p id="mass">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+          <p id="mass"></p>
         </div>
       </div>
     </div>
